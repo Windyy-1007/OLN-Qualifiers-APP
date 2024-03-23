@@ -21,3 +21,51 @@
     background-color: white;
     color: black;
 }
+
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.label{
+    color: white;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Set font size to 1.5em */
+    margin: 20px;
+}
+
+.answer{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Set font size to 1.5em */
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.jpc-button{
+    background-color: #151515;
+    color: white;
+    padding-left: 10 px;
+    padding-right: 10 px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 130px;
+    text-decoration: none;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.2em; /* Set font size to 1.5em */
+    margin-left: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.jpc-button:hover{
+    background-color: blue;
+    color: white;
+}

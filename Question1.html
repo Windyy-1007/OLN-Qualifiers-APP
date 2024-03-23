@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+    <body style="background-color: black;">
+        <video class="video" src="video/1.mp4" controls></video>
+        <form>
+        <form action="submit.php" method="POST">
+            <label class="label" for="answer">Answer:</label>
+            <input class="answer" type="text" id="answer" name="answer" required>
+            <button class="jpc-button" type="submit">Submit</button>
+        </form>
+        <div>
+            <h2 id="timer">00:00.00</h2>
+            <button id="startButton">Start</button>
+            <button id="pauseButton">Pause</button>
+        </div>
+
+        <script>
+            var timerInterval;
+            var startTime;
+            var elapsedTime = 0;
+            var timerElement = document.getElementById('timer');
+            var startButton = document.getElementById('startButton');
+            var pauseButton = document.getElementById('pauseButton');
+
+            function startTimer() {
+                startTime = Date.now() - elapsedTime;
+                timerInterval = setInterval(updateTimer, 10);
+                startButton.disabled = true;
+                pauseButton.disabled = false;
+            }
+
+            function pauseTimer() {
+                clearInterval(timerInterval);
+                startButton.disabled = false;
+                pauseButton.disabled = true;
+            }
+
+            function updateTimer() {
+                var currentTime = Date.now();
+                elapsedTime = currentTime - startTime;
+                var minutes = Math.floor(elapsedTime / 60000);
+                var seconds = Math.floor((elapsedTime % 60000) / 1000);
+                var milliseconds = Math.floor((elapsedTime % 1000) / 10);
+                timerElement.textContent = formatTime(minutes) + ':' + formatTime(seconds) + '.' + formatTime(milliseconds);
+            }
+
+            function formatTime(time) {
+                return time.toString().padStart(2, '0');
+            }
+
+            startButton.addEventListener('click', startTimer);
+            pauseButton.addEventListener('click', pauseTimer);
+        </script>
+    </body>
+</html>
