@@ -1,0 +1,23 @@
+.button{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Set font size to 1.5em */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.button:active{
+    background-color: white;
+    color: black;
+}
