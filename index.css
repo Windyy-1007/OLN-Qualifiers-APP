@@ -8,7 +8,7 @@
     padding: 10px;
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
-    font-size: 1.5em; /* Set font size to 1.5em */
+    font-size: 1em; /* Set font size to 1.5em */
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -24,17 +24,23 @@
 
 .video {
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
+    transform: translate(-50%, -35%);
+    width: 75%;
+}
+
+.exam-section{
+    position: fixed;
+    top: 85%;
+    left: 12%;
 }
 
 .label{
     color: white;
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
-    font-size: 1.5em; /* Set font size to 1.5em */
+    font-size: 1em; /* Set font size to 1.5em */
     margin: 20px;
 }
 
@@ -44,8 +50,10 @@
     text-decoration: none;
     border: none;
     font-family:'Courier New', Courier, monospace;
-    font-size: 1.5em; /* Set font size to 1.5em */
+    font-size: 1em; /* Set font size to 1.5em */
     transition: background-color 0.5s ease, color 0.5s ease;
+    width: 600px;
+
 }
 
 .jpc-button{
@@ -59,7 +67,7 @@
     text-decoration: none;
     border: none;
     font-family:'Courier New', Courier, monospace;
-    font-size: 1.2em; /* Set font size to 1.5em */
+    font-size: 1em; /* Set font size to 1.5em */
     margin-left: 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -69,9 +77,21 @@
     color: white;
 }
 
-.answer_sheet{
-    position: fixed;
-    top: 80%;
-    left: 30%;
-    width: 50%;
+.display-ans{
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em; /* Set font size to 1.5em */
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+.display-time{
+    color:aqua;
+    text-decoration: none;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em; /* Set font size to 1.5em */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
