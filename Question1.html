@@ -8,14 +8,14 @@
 </head>
     <body style="background-color: black;">
         <video class="video" src="video/1.mp4" controls></video>
-        <form>
+        <form class="answer_sheet">
         <form action="submit.php" method="POST">
             <label class="label" for="answer">Answer:</label>
             <input class="answer" type="text" id="answer" name="answer" required>
             <button class="jpc-button" type="submit">Submit</button>
         </form>
-        <div>
-            <h2 id="timer">00:00.00</h2>
+        <div class="time_display"></div>
+            <h2 class="clock" id="timer">00:00.00</h2>
             <button id="startButton">Start</button>
             <button id="pauseButton">Pause</button>
         </div>
