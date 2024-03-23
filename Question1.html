@@ -17,10 +17,27 @@
             <input class="answer" type="text" id="answer" name="answer" required>
             <label class="display-ans" for="answer" style="padding-left: 10px">---</label>
         </form>
+
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var answer = document.querySelector('.answer').value;
+            var time_submit = document.querySelector('#timer').textContent;
+            var displayAns = document.querySelector('.display-ans');
+            var displayTime = document.querySelector('.display-time');
+    
+            displayAns.textContent = answer + ' || ' + time_submit;
+            document.querySelector('.answer').value = '';
+            displayTime.textContent = time_submit;
+        });
+        </script>
+
+        <!--Timer-->
         <div>
-            <h2 id="timer">00:00.00</h2>
-            <button id="startButton">Start</button>
-            <button id="pauseButton">Pause</button>
+            <h2 class="label" id="timer" style="color:aliceblue;">00:00.00</h2>
+            <button class="jpc-button" id="startButton">Bắt đầu</button>
+            <button class="jpc-button" id="pauseButton">Tạm dừng</button>
+            <button class="jpc-button" id="pauseButton">Câu kế tiếp</button>
         </div>
         
         <!--Script for timer-->

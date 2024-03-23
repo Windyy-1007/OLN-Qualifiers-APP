@@ -1,3 +1,8 @@
+body{
+    font-family:'Arial', sans-serif;
+    font-size: 1em;
+}
+
 .button{
     position: fixed;
     top: 50%;
@@ -7,8 +12,6 @@
     color: black;
     padding: 10px;
     text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em; /* Set font size to 1.5em */
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -26,7 +29,7 @@
     position: fixed;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -30%);
     width: 75%;
 }
 
@@ -39,8 +42,6 @@
 .label{
     color: white;
     text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em; /* Set font size to 1.5em */
     margin: 20px;
 }
 
@@ -49,8 +50,6 @@
     color: black;
     text-decoration: none;
     border: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em; /* Set font size to 1.5em */
     transition: background-color 0.5s ease, color 0.5s ease;
     width: 600px;
 
@@ -66,8 +65,6 @@
     width: 130px;
     text-decoration: none;
     border: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em; /* Set font size to 1.5em */
     margin-left: 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -81,8 +78,6 @@
     color: white;
     text-decoration: none;
     border: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em; /* Set font size to 1.5em */
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -90,8 +85,6 @@
     color:aqua;
     text-decoration: none;
     border: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em; /* Set font size to 1.5em */
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
