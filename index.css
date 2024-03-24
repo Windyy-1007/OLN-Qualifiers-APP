@@ -43,7 +43,7 @@ body{
 .label{
     color: white;
     text-decoration: none;
-    margin: 20px;
+    margin: 16px 0;
 }
 
 .answer{
@@ -59,7 +59,7 @@ body{
 .jpc-button{
     background-color: #151515;
     color: white;
-    padding-left: 10 px;
+    padding-left: 10px;
     padding-right: 10 px;
     padding-top: 5px;
     padding-bottom: 3px;
@@ -90,3 +90,7 @@ body{
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+input {
+    padding: 10px;
+    font-size: 18px;
+}
